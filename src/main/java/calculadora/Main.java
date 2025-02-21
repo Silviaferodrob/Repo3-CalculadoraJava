@@ -22,5 +22,24 @@ public class Main {
         double acumulado2 = suma.sumaAcumulada(5);
         System.out.println("Suma total acumulada: " + acumulado2);
 
+        // PASO 2.1: creamos la instancia de la clase RESTA
+        Resta resta = new Resta();
+
+        // PASO 2.2: Probar la resta de dos números reales
+        double resultadoRestaReales = resta.restaDosReales(9.5, 2.5);
+        System.out.println("Resta de dos reales: " + resultadoRestaReales);
+
+        // PASO 2.3: Probar la resta de dos números enteros
+        int resultadoRestaEnteros = resta.restaDosEnteros(10, 3);
+        System.out.println("Resta de dos enteros: " + resultadoRestaEnteros);
+
+        // PASO 2.4: Probar la resta de tres números reales
+        double resultadoRestaTres = resta.restaTresReales(20.0, 5.0, 2.0);
+        System.out.println("Resta de tres reales: " + resultadoRestaTres);
+
+        // PASO 2.5: Probar la resta acumulada
+        double acumuladoResta1 = resta.restaAcumulada(5);
+        System.out.println("Valor acumulado después de restar 5: " + acumuladoResta1);
+
     }
 }
